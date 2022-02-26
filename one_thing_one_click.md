@@ -10,13 +10,13 @@
 网络框架. 
 
 
-<img src="one-thing-one-click-p2.png" style="zoom:50%;" />.   
+<img src="one-thing-one-click-p2.png" height="313" style="zoom:50%;" />.   
 在ScanNet-v2测试集的实验结果    
 
-<img src="one-thing-one-click-p3.png" style="zoom:50%;" />.  
+<img src="one-thing-one-click-p3.png" height="313" style="zoom:50%;" />.  
 在ScanNet-v2验证集的实验结果.   
 
-<img src="one-thing-one-click-p4.png" style="zoom:50%;" />.  
+<img src="one-thing-one-click-p4.png" height="313" style="zoom:50%;" />.  
 在S3DIS Area-5的实验结果.  
 
 
