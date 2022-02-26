@@ -22,9 +22,9 @@
 模型使用3D U-Net作为backbone，主要的特点在于使用图传播和关系网络来实现对大规模稀疏点云数据的语义分割任务。
 
 - **graph propagation**  在将点云分割为super-voxel后，使用迭代的图传播机制将稀疏的标签传播到各个super-voxel区域：
->  to propagate labels to unknown regions through the graph, we formulate it as an optimization problem that considers both
+>  To propagate labels to unknown regions through the graph, we formulate it as an optimization problem that considers both
 the network prediction and similarities among the super- voxels to achieve the global optimum with the energy func- tion below similar to Conditional Random Field (CRF).
 
-- **relation network**。这一步其实就是利用之前整合的keypoints feature对每一个proposal做RoI Grid Pooling。只是需要额外注意的是，这个的grid 半径是多尺度的，作者认为这种方式可以提取更丰富的proposal feature。
+- **relation network** 为了提升标签传播的性能，引入一个关系网络模型作为3D U-Net的补充，对每个super-voxel进行embedding，从而预测它们之间的相似性：
 
-> In this step, we propose keypoint-to-grid RoI feature abstraction to generate accurate proposal-aligned features from the keypoint features for fine-grained proposal refinement.
+> It aims to predict a category-related embedding fj for each super-voxel vj as the similarity measurement. 
