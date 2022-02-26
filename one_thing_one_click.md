@@ -5,18 +5,19 @@
 > 作者单位：The Chinese University of Hong Kong, The University of Hong Kong.     
 > 代码地址：[https://github.com/liuzhengzhe/One-Thing-One-Click].      
 > 一句话读论文：They use a graph propagation module to iteratively conduct training and label propagation and a relation network to model the feature similarity among graph node.
+
 <img src="one-thing-one-click-p1.png" style="zoom:50%;" />.  
-网络框架
+网络框架. 
 
 
-![img](one-thing-one-click-p2.png).   
-在ScanNet-v2测试集的实验结果
+<img src="one-thing-one-click-p2.png" style="zoom:50%;" />.   
+在ScanNet-v2测试集的实验结果    
 
-![img](one-thing-one-click-p3.png).   
-在ScanNet-v2验证集的实验结果
+<img src="one-thing-one-click-p3.png" style="zoom:50%;" />.  
+在ScanNet-v2验证集的实验结果.   
 
-![img](one-thing-one-click-p4.png).   
-在S3DIS Area-5的实验结果
+<img src="one-thing-one-click-p4.png" style="zoom:50%;" />.  
+在S3DIS Area-5的实验结果.  
 
 
 整体框架属于two-stage，有两个核心内容，第一个voxel feature → keypoints feature，第二个keypoints feature → proposal/grid feature。
