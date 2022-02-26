@@ -4,12 +4,16 @@
 > 论文地址：[https://arxiv.org/pdf/2104.02246.pdf](https://openaccess.thecvf.com/content/CVPR2021/papers/Liu_One_Thing_One_Click_A_Self-Training_Approach_for_Weakly_Supervised_CVPR_2021_paper.pdf).     
 > 作者单位：The Chinese University of Hong Kong, The University of Hong Kong.     
 > 代码地址：[https://github.com/liuzhengzhe/One-Thing-One-Click].      
-> 一句话读论文：They propose a novel two-stage detection network for accurate 3D object detection through a two-step strategy of point-voxel feature aggregation.     
+> 一句话读论文：They use 1.a graph propagation module to iteratively conduct training and label propagation and 2. a relation network to model the feature similarity among graph node.
 
 ![img](one-thing-one-click-p1.png)网络框架
 
-<img src="https://pic2.zhimg.com/80/v2-f8e43a601205fcf09fb91e187fddc73d_1440w.jpg" 
-     alt="KITTI testset 实验结果" style="zoom:50%;" />
+![img](one-thing-one-click-p2.png)在ScanNet-v2测试集的实验结果
+
+![img](one-thing-one-click-p3.png)在ScanNet-v2验证集的实验结果
+
+![img](one-thing-one-click-p4.png)在S3DIS Area-5的实验结果
+
 
 整体框架属于two-stage，有两个核心内容，第一个voxel feature → keypoints feature，第二个keypoints feature → proposal/grid feature。
 
