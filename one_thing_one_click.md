@@ -1,9 +1,13 @@
 ### One thing one click（CVPR 2021）
 
 > 论文标题：One Thing One Click: A Self-Training Approach for Weakly Supervised 3D Semantic Segmentation
+
 > 论文地址：[https://arxiv.org/pdf/2104.02246.pdf](https://openaccess.thecvf.com/content/CVPR2021/papers/Liu_One_Thing_One_Click_A_Self-Training_Approach_for_Weakly_Supervised_CVPR_2021_paper.pdf)
+
 > 作者单位：The Chinese University of Hong Kong, The University of Hong Kong
+
 > 代码地址：[https://github.com/liuzhengzhe/One-Thing-One-Click]
+
 > 一句话读论文：They propose a novel two-stage detection network for accurate 3D object detection through a two-step strategy of point-voxel feature aggregation.
 
 ![img](https://pic3.zhimg.com/80/v2-03fb518bb8a7c8cd5a8b0c5da4c7d496_1440w.jpg)网络框架
