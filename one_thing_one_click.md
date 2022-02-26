@@ -6,16 +6,16 @@
 > 代码地址：[https://github.com/liuzhengzhe/One-Thing-One-Click].      
 > 一句话读论文：They use a graph propagation module to iteratively conduct training and label propagation and a relation network to model the feature similarity among graph node.
 
-![img](one-thing-one-click-p1.png)
+![img](one-thing-one-click-p1.png).   
 网络框架
 
-![img](one-thing-one-click-p2.png)
+![img](one-thing-one-click-p2.png).   
 在ScanNet-v2测试集的实验结果
 
-![img](one-thing-one-click-p3.png)
+![img](one-thing-one-click-p3.png).   
 在ScanNet-v2验证集的实验结果
 
-![img](one-thing-one-click-p4.png)
+![img](one-thing-one-click-p4.png).   
 在S3DIS Area-5的实验结果
 
 
