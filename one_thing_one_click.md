@@ -5,10 +5,9 @@
 > 作者单位：The Chinese University of Hong Kong, The University of Hong Kong.     
 > 代码地址：[https://github.com/liuzhengzhe/One-Thing-One-Click].      
 > 一句话读论文：They use a graph propagation module to iteratively conduct training and label propagation and a relation network to model the feature similarity among graph node.
-<img src="one-thing-one-click-p1.png" alt="网络框架" style="zoom:50%;" />
-
-![img](one-thing-one-click-p1.png).   
+<img src="one-thing-one-click-p1.png" style="zoom:50%;" />.  
 网络框架
+
 
 ![img](one-thing-one-click-p2.png).   
 在ScanNet-v2测试集的实验结果
