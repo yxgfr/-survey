@@ -1,2 +1,2 @@
 # -survey
-### Paper Survey for Weakly Supervised Panoptic Segmentation（CVPR 2020）
+### Paper Survey for Weakly Supervised Panoptic Segmentation
