@@ -8,9 +8,7 @@
 
 ![img](https://pic3.zhimg.com/80/v2-03fb518bb8a7c8cd5a8b0c5da4c7d496_1440w.jpg)网络框架
 
-<img src="https://pic2.zhimg.com/80/v2-f8e43a601205fcf09fb91e187fddc73d_1440w.jpg"
-
-alt="KITTI testset 实验结果" style="zoom:50%;" />
+<img src="https://pic2.zhimg.com/80/v2-f8e43a601205fcf09fb91e187fddc73d_1440w.jpg" alt="KITTI testset 实验结果" style="zoom:50%;" />
 
 整体框架属于two-stage，有两个核心内容，第一个voxel feature → keypoints feature，第二个keypoints feature → proposal/grid feature。
 
