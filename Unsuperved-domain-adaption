@@ -1,30 +1,26 @@
-### One thing one click（CVPR 2021）
+### AdaptLPS（arXiv）
 
-> 论文标题：One Thing One Click: A Self-Training Approach for Weakly Supervised 3D Semantic Segmentation.      
+> 论文标题：Unsupervised Domain Adaptation for LiDAR Panoptic Segmentation.          
 > 论文地址：[https://arxiv.org/pdf/2104.02246.pdf](https://openaccess.thecvf.com/content/CVPR2021/papers/Liu_One_Thing_One_Click_A_Self-Training_Approach_for_Weakly_Supervised_CVPR_2021_paper.pdf).     
-> 作者单位：The Chinese University of Hong Kong, The University of Hong Kong.     
-> 代码地址：[https://github.com/liuzhengzhe/One-Thing-One-Click].      
-> 一句话读论文：They use a graph propagation module to iteratively conduct training and label propagation and a relation network to model the feature similarity among graph node.
+> 作者单位：暂无
+> 代码地址：暂无
+> 一句话读论文：They propose an unsupervised domain adaptation model named AdaptLPS, in order to  leverage task-specific knowledge and account for variation.
 
-<img src="one-thing-one-click-p1.png" style="zoom:50%;" />.  
+<img src="Unsupervised-domain-adaption-p2.png" style="zoom:50%;" />.  
 网络框架. 
 
 
-<img src="one-thing-one-click-p2.png" height="313" style="zoom:50%;" />.   
-在ScanNet-v2测试集的实验结果    
+<img src="Unsupervised-domain-adaption-p1.png"  style="zoom:50%;" />.   
+实验结果    
 
-<img src="one-thing-one-click-p3.png" height="313" style="zoom:50%;" />.  
-在ScanNet-v2验证集的实验结果.   
+模型使用两种策略来进行domain adaptation: 基于数据和基于模型.    
 
-<img src="one-thing-one-click-p4.png" height="313" style="zoom:50%;" />.  
-在S3DIS Area-5的实验结果.  
+- **data-based**  基于数据的adaptations使用三种技术处理原始雷达点云数据，来减少source domain和target domain的差距：
+>  The data-based domain adapta- tion minimizes the domain gap between the raw LiDAR scans from the source and target domains using three techniques, namely, (i) pose correction which accounts for the different mounting positions of LiDARs, (ii) virtual scan generation which simulates the point cloud from the target domain using the source domain, and (iii) intensity mapping which learns a residual to map the LiDAR intensities between the source and target domains.
 
-模型使用3D U-Net作为backbone，主要的特点在于使用图传播和关系网络来实现对大规模稀疏点云数据的语义分割任务。
+- **model-based**  基于模型的adaptations应用Multi-scale Feature-space Optimal Transport (MS-FSOT)和Instance-Aware Sampling (IAS)两种方法来使网络在source domain和target domain上都能抓取到由代表性的特征。    
 
-- **graph propagation**  在将点云分割为super-voxel后，使用迭代的图传播机制将稀疏的标签传播到各个super-voxel区域：
->  To propagate labels to unknown regions through the graph, we formulate it as an optimization problem that considers both
-the network prediction and similarities among the super- voxels to achieve the global optimum with the energy func- tion below similar to Conditional Random Field (CRF).
-
-- **relation network** 为了提升标签传播的性能，引入一个关系网络模型作为3D U-Net的补充，对每个super-voxel进行embedding，从而预测它们之间的相似性：
-
-> It aims to predict a category-related embedding fj for each super-voxel vj as the similarity measurement. 
+> MS-FSOT:
+Optimal transport establishes a framework for comparing two probability measures and provides a solution for moving the mass from one distribution to the other.      
+> IAS: 
+We sample a fixed number of points, for each (class, instance) pair for alignment by MS- FSOT. Further, we downsample the panoptic labels to match the height and width of the feature map to associate every element in the feature map with its corresponding pair.
