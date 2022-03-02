@@ -2,7 +2,7 @@
 
 > 论文标题：Unsupervised Domain Adaptation for LiDAR Panoptic Segmentation.          
 > 论文地址：[https://arxiv.org/pdf/2104.02246.pdf](https://openaccess.thecvf.com/content/CVPR2021/papers/Liu_One_Thing_One_Click_A_Self-Training_Approach_for_Weakly_Supervised_CVPR_2021_paper.pdf).     
-> 作者单位：暂无。    
+> 作者单位：暂无    
 > 代码地址：暂无         
 > 一句话读论文：They propose an unsupervised domain adaptation model named AdaptLPS, in order to  leverage task-specific knowledge and account for variation.
 
